@@ -489,7 +489,7 @@ def main():
  
         # save the distribution of aggregates
         print("Save the distribution of aggregates into the file {}...".format(args.output))
-        output = args.output + "_" + str(epsilon_AA) + "_" + str(epsilon_BB) + "_" + str(epsilon_AB)
+        output = args.output + "_" + args.traj_file.replace('.lammpstrj', '').replace('.nc', '').replace('/', '_')
         saveDistribution(distribution, output)
         print("Distribution of aggregates saved")
         print("The data are saved in the directory DATA_distribution")
@@ -512,7 +512,8 @@ def main():
         for i in range(distribution_mean_new.shape[0]):
             s += distribution_mean_new[i] * (i)
     if args.plot == 'yes':
-        plotDistribution(args.output + "_" + str(args.epsilon[0]) + "_" + str(args.epsilon[1]) + "_" + str(args.epsilon[2]))
+        filename = args.output + "_" + str(epsilon_AA) + "_" + str(epsilon_BB) + "_" + str(epsilon_AB)
+        plotDistribution(filename)
 
 if __name__ == "__main__":
     main()
