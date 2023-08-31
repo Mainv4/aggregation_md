@@ -1,4 +1,9 @@
 **/.DS_Store
+**/*.lammpstrj
+**/log.lammps
+**/*.dat
+**/*.restart1
+**/*.restart2
 DATA_distribution
 FIGURES
 __pycache__
