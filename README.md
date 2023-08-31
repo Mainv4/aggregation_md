@@ -12,7 +12,7 @@ The scripts are written in python 3 and require the following packages:
 * tqdm
 
 ## Parameters
-`
+```
 options:
   -h, --help            show this help message and exit
   -c {yes,no}, --compute {yes,no}
@@ -33,7 +33,7 @@ options:
                         Plot the distribution of aggregates
   -o OUTPUT, --output OUTPUT
                         Output file
-`
+```
 ## Examples usage
 
 The scripts are designed to be run from the command line.  The scripts are:
