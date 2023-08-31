@@ -13,6 +13,7 @@
 
 from joblib import Parallel, delayed
 import matplotlib.pyplot as plt
+from plot_style import set_plot_style
 import MDAnalysis as mda
 import networkx as nx
 import numpy as np
@@ -423,7 +424,7 @@ def plotDistributionVsTime(distribution, k_AB, k_BA):
     plt.tight_layout()
     plt.savefig('distribution_vs_time.png')
 
-def plotDistribution(file_name):
+def plotDistribution(file_name, atom_type):
     """
     Plot the mean distribution of aggregates
 
@@ -431,21 +432,49 @@ def plotDistribution(file_name):
     ----------
     file_name : str
         The name of the distribution file
+    atom_type : list of str
+        The type of the wanted atoms
     """
     try:
         distribution = np.load("DATA_distribution/" + file_name + '.npy')
         distribution_mean = computeMeanDistribution(distribution)
-        #plt.plot(distribution_mean)
-        # imshow
-        # plt.imshow(distribution_mean, cmap='jet')
-        # origin='lower' puts (0,0) at the bottom left
+
+        # Linscale
+        set_plot_style()
         plt.imshow(distribution_mean, cmap='jet', origin='lower')
-        plt.colorbar()
-        plt.xlabel(r'$n_B$')
-        plt.ylabel(r'$n_A$')
+        plt.colorbar(aspect=5, pad=0.01, fraction=0.15 * 2, label=r'$N$')
+        resname_A = atom_type[0].split(' ')[1]
+        resname_B = atom_type[1].split(' ')[1]
+        plt.xlabel(r'$n_\mathrm{%s}$' % resname_B)
+        plt.ylabel(r'$n_\mathrm{%s}$' % resname_A)
+        if max(distribution_mean.shape) < 10:
+            plt.xticks(np.arange(0, distribution_mean.shape[0], 1))
+            plt.yticks(np.arange(0, distribution_mean.shape[1], 1))
+        else:
+            plt.xticks(np.arange(0, distribution_mean.shape[0], 2))
+            plt.yticks(np.arange(0, distribution_mean.shape[1], 2))
         plt.tight_layout()
         plt.savefig("FIGURES/" + file_name + '.png')
-        sys.exit()
+        plt.close()
+        # Logscale
+        from matplotlib.colors import LogNorm
+        set_plot_style()
+        distribution_mean = np.ma.masked_equal(distribution_mean, 0)
+        plt.imshow(distribution_mean, cmap='jet', origin='lower', norm=LogNorm())
+        plt.colorbar(aspect=5, pad=0.01, fraction=0.15 * 2, label=r'$N$')
+        plt.xlabel(r'$n_\mathrm{%s}$' % resname_B)
+        plt.ylabel(r'$n_\mathrm{%s}$' % resname_A)
+        if max(distribution_mean.shape) < 10:
+            plt.xticks(np.arange(0, distribution_mean.shape[0], 1))
+            plt.yticks(np.arange(0, distribution_mean.shape[1], 1))
+        else:
+            plt.xticks(np.arange(0, distribution_mean.shape[0], 2))
+            plt.yticks(np.arange(0, distribution_mean.shape[1], 2))
+        plt.tight_layout()
+        plt.savefig("FIGURES/" + file_name + '_log.png')
+        plt.close()
+
+
     except FileNotFoundError:
         print("Distribution file not found")
         print("Please compute the distribution first")
@@ -561,7 +590,7 @@ def main():
             s += distribution_mean_new[i] * (i)
     if args.plot == 'yes':
         file_name = args.output + "_" + args.traj_file.replace('.lammpstrj', '').replace('.nc', '').replace('/', '_')
-        plotDistribution(file_name)
+        plotDistribution(file_name, atom_types)
 
 if __name__ == "__main__":
     main()
