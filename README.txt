@@ -1,6 +1,6 @@
 # aggregation_md
 
-## minimal documentation for the aggregation_md project
+## Description and requirements
 
 The aggregation_md project is a series of python scripts that can be used to evaluate the distribution of aggregates from molecular dynamics simulations.
 
@@ -10,6 +10,31 @@ The scripts are written in python 3 and require the following packages:
 * matplotlib
 * networkx
 * tqdm
+
+## Parameters
+`
+options:
+  -h, --help            show this help message and exit
+  -c {yes,no}, --compute {yes,no}
+                        Compute the distribution of aggregates
+  -p {yes,no}, --parallel {yes,no}
+                        If True, the computation will be done in parallel
+  -a ATOM_TYPE [ATOM_TYPE ...], --atom_type ATOM_TYPE [ATOM_TYPE ...]
+                        The type of the wanted atoms: "type A" "type B" "type
+                        C"
+  -e EPSILON [EPSILON ...], --epsilon EPSILON [EPSILON ...]
+                        Distance between atoms to be considered as a pair:
+                        epsilon_AC epsilon_BC
+  -tr TRAJ_FILE, --traj-file TRAJ_FILE
+                        Trajectory file or distribution file
+  -to TOP_FILE, --top-file TOP_FILE
+                        Topology file
+  -pl {yes,no}, --plot {yes,no}
+                        Plot the distribution of aggregates
+  -o OUTPUT, --output OUTPUT
+                        Output file
+`
+## Examples usage
 
 The scripts are designed to be run from the command line.  The scripts are:
 * calc_distribution_1_type.py
