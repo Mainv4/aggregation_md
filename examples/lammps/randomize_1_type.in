@@ -1,0 +1,37 @@
+# LAMMPS input file for Lennard-Jones simulation. First sage: randomization
+units lj
+dimension 3
+boundary p p p
+atom_style sphere
+
+# Define the simulation box
+lattice sc 0.05
+region box block 0 16 0 16 0 16
+create_box 1 box
+create_atoms 1 box
+
+# Attribute a velocity to each atom
+velocity all create 1 87287
+
+# Define the potential (hard sphere)
+pair_style harmonic/cut
+pair_coeff 1 1 2.0 2.0
+
+# Define the integrator (Langevin)
+fix 1 all nvt temp 1 1 1
+fix 2 all langevin 1 1 1 48279 
+
+# Define the timestep
+timestep 0.001
+
+# Define the output
+thermo_style custom step time temp density
+thermo 100
+restart 100 random.restart1 random.restart2
+dump 1 all custom 100 random_1_type.lammpstrj id type x y z #ix iy iz
+
+# Run the simulation
+run 100000
+
+# Write the final configuration to a file with nocoeff
+write_data random_initial_config_1_type.dat nocoeff

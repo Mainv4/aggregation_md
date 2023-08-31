@@ -1,0 +1,33 @@
+# LAMMPS input file for Lennard-Jones simulation. Second stage: Lennard-Jones simulation
+units lj
+dimension 3
+boundary p p p
+atom_style sphere
+
+# Read the initial configuration from a file
+read_data random_initial_config_2_types.dat
+
+# Attribute a velocity to each atom
+#velocity all create 1 83
+
+# Define the potential
+pair_style lj/cut 2.5
+pair_modify shift yes
+pair_coeff 1 1 10 1.0
+pair_coeff 2 2 10 1.0
+pair_coeff 1 2 100 2.0
+
+# Define the integrator
+fix 1 all nvt temp 1 1 1
+
+# Define the timestep
+timestep 0.001
+
+# Define the output
+thermo_style custom step time temp density
+thermo 10000
+restart 10000 lj.restart1 lj.restart2
+dump 1 all custom 1000 traj_2_types.lammpstrj id type x y z #ix iy iz
+
+# Run the simulation
+run 10000000
