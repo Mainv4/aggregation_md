@@ -1,0 +1,890 @@
+Component 0
+<Atom 8220: O of type 602 resid 1 and segid SYSTEM>
+<Atom 20: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1650: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8040: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4608: O of type 602 resid 1 and segid SYSTEM>
+
+Component 1
+<Atom 65: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 2
+<Atom 4440: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5220: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6048: O of type 602 resid 1 and segid SYSTEM>
+<Atom 990: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6108: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2970: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4270: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1730: O of type 704 resid 1 and segid SYSTEM>
+<Atom 44: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 50: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 3
+<Atom 7548: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6072: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1680: O of type 704 resid 1 and segid SYSTEM>
+<Atom 2040: O of type 704 resid 1 and segid SYSTEM>
+
+Component 4
+<Atom 1260: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6432: O of type 602 resid 1 and segid SYSTEM>
+<Atom 65: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 2650: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5820: O of type 602 resid 1 and segid SYSTEM>
+
+Component 5
+<Atom 2080: O of type 704 resid 1 and segid SYSTEM>
+<Atom 37: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 2730: O of type 704 resid 1 and segid SYSTEM>
+<Atom 2720: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7788: O of type 602 resid 1 and segid SYSTEM>
+
+Component 6
+<Atom 1820: O of type 704 resid 1 and segid SYSTEM>
+<Atom 21: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1580: O of type 704 resid 1 and segid SYSTEM>
+<Atom 650: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5688: O of type 602 resid 1 and segid SYSTEM>
+
+Component 7
+<Atom 1890: O of type 704 resid 1 and segid SYSTEM>
+<Atom 620: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5676: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6060: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4932: O of type 602 resid 1 and segid SYSTEM>
+<Atom 35: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4572: O of type 602 resid 1 and segid SYSTEM>
+<Atom 39: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5424: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3350: O of type 704 resid 1 and segid SYSTEM>
+
+Component 8
+<Atom 8244: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1540: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5988: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4860: O of type 602 resid 1 and segid SYSTEM>
+<Atom 42: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 9
+<Atom 8604: O of type 602 resid 1 and segid SYSTEM>
+<Atom 52: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4512: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2640: O of type 704 resid 1 and segid SYSTEM>
+<Atom 2050: O of type 704 resid 1 and segid SYSTEM>
+
+Component 10
+<Atom 28: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 6900: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6912: O of type 602 resid 1 and segid SYSTEM>
+
+Component 11
+<Atom 8004: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8424: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4250: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4284: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3980: O of type 704 resid 1 and segid SYSTEM>
+<Atom 49: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 12
+<Atom 3220: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6552: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 6372: O of type 602 resid 1 and segid SYSTEM>
+
+Component 13
+<Atom 5532: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6336: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5616: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2960: O of type 704 resid 1 and segid SYSTEM>
+<Atom 12: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 14
+<Atom 3450: O of type 704 resid 1 and segid SYSTEM>
+<Atom 24: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7932: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7620: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6852: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2110: O of type 704 resid 1 and segid SYSTEM>
+
+Component 15
+<Atom 2660: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6024: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5880: O of type 602 resid 1 and segid SYSTEM>
+
+Component 16
+<Atom 5592: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3150: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1030: O of type 704 resid 1 and segid SYSTEM>
+<Atom 10: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5856: O of type 602 resid 1 and segid SYSTEM>
+
+Component 17
+<Atom 4416: O of type 602 resid 1 and segid SYSTEM>
+<Atom 25: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4120: O of type 704 resid 1 and segid SYSTEM>
+<Atom 30: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 8352: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7992: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1950: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1050: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8544: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2750: O of type 704 resid 1 and segid SYSTEM>
+
+Component 18
+<Atom 7836: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7104: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4488: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2230: O of type 704 resid 1 and segid SYSTEM>
+<Atom 62: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 3870: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3260: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6180: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6972: O of type 602 resid 1 and segid SYSTEM>
+<Atom 46: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 19
+<Atom 3760: O of type 704 resid 1 and segid SYSTEM>
+<Atom 22: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 27: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4920: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6084: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2940: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6132: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6564: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6612: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6660: O of type 602 resid 1 and segid SYSTEM>
+
+Component 20
+<Atom 2790: O of type 704 resid 1 and segid SYSTEM>
+<Atom 2480: O of type 704 resid 1 and segid SYSTEM>
+<Atom 29: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4150: O of type 704 resid 1 and segid SYSTEM>
+<Atom 950: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3860: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1300: O of type 704 resid 1 and segid SYSTEM>
+<Atom 690: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3250: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4240: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 18: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 790: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7056: O of type 602 resid 1 and segid SYSTEM>
+
+Component 21
+<Atom 5916: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3490: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8328: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4500: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5328: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1380: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3010: O of type 704 resid 1 and segid SYSTEM>
+<Atom 15: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7032: O of type 602 resid 1 and segid SYSTEM>
+
+Component 22
+<Atom 5172: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4070: O of type 704 resid 1 and segid SYSTEM>
+<Atom 55: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5964: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1610: O of type 704 resid 1 and segid SYSTEM>
+
+Component 23
+<Atom 51: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7092: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1850: O of type 704 resid 1 and segid SYSTEM>
+<Atom 23: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 3830: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6804: O of type 602 resid 1 and segid SYSTEM>
+<Atom 970: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7212: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7044: O of type 602 resid 1 and segid SYSTEM>
+
+Component 24
+<Atom 3480: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5292: O of type 602 resid 1 and segid SYSTEM>
+<Atom 64: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1040: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3080: O of type 704 resid 1 and segid SYSTEM>
+
+Component 25
+<Atom 53: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1190: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6708: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7764: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6624: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5100: O of type 602 resid 1 and segid SYSTEM>
+
+Component 26
+<Atom 7464: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7560: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7956: O of type 602 resid 1 and segid SYSTEM>
+<Atom 61: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 6828: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4956: O of type 602 resid 1 and segid SYSTEM>
+
+Component 27
+<Atom 7356: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3610: O of type 704 resid 1 and segid SYSTEM>
+<Atom 32: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 2210: O of type 704 resid 1 and segid SYSTEM>
+
+Component 28
+<Atom 6720: O of type 602 resid 1 and segid SYSTEM>
+<Atom 580: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8676: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6420: O of type 602 resid 1 and segid SYSTEM>
+<Atom 63: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 29
+<Atom 3020: O of type 704 resid 1 and segid SYSTEM>
+<Atom 56: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4896: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1070: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8520: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3690: O of type 704 resid 1 and segid SYSTEM>
+
+Component 30
+<Atom 57: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 630: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4656: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4020: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7440: O of type 602 resid 1 and segid SYSTEM>
+
+Component 31
+<Atom 1170: O of type 704 resid 1 and segid SYSTEM>
+<Atom 54: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7944: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3180: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7596: O of type 602 resid 1 and segid SYSTEM>
+
+Component 32
+<Atom 2780: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7116: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2510: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4872: O of type 602 resid 1 and segid SYSTEM>
+<Atom 38: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 33
+<Atom 1490: O of type 704 resid 1 and segid SYSTEM>
+<Atom 860: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3810: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5244: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7236: O of type 602 resid 1 and segid SYSTEM>
+<Atom 34: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 8124: O of type 602 resid 1 and segid SYSTEM>
+<Atom 11: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1740: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3390: O of type 704 resid 1 and segid SYSTEM>
+
+Component 34
+<Atom 2180: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 2630: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5400: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6984: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5868: O of type 602 resid 1 and segid SYSTEM>
+<Atom 780: O of type 704 resid 1 and segid SYSTEM>
+
+Component 35
+<Atom 600: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4548: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7272: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5436: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5472: O of type 602 resid 1 and segid SYSTEM>
+<Atom 17: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 36
+<Atom 1830: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3800: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8712: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2280: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3620: O of type 704 resid 1 and segid SYSTEM>
+<Atom 41: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 37
+<Atom 2830: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6012: O of type 602 resid 1 and segid SYSTEM>
+<Atom 59: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1570: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8736: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1940: O of type 704 resid 1 and segid SYSTEM>
+<Atom 2270: O of type 704 resid 1 and segid SYSTEM>
+<Atom 36: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7656: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2100: O of type 704 resid 1 and segid SYSTEM>
+
+Component 38
+<Atom 4404: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8652: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2520: O of type 704 resid 1 and segid SYSTEM>
+<Atom 960: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7776: O of type 602 resid 1 and segid SYSTEM>
+<Atom 16: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 39
+<Atom 3440: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6480: O of type 602 resid 1 and segid SYSTEM>
+<Atom 47: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5496: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1150: O of type 704 resid 1 and segid SYSTEM>
+
+Component 40
+<Atom 7476: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1280: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4584: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1120: O of type 704 resid 1 and segid SYSTEM>
+
+Component 41
+<Atom 3120: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6816: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2910: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4190: O of type 704 resid 1 and segid SYSTEM>
+<Atom 9: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5460: O of type 602 resid 1 and segid SYSTEM>
+
+Component 42
+<Atom 8640: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7884: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5976: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8664: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6384: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3840: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1620: O of type 704 resid 1 and segid SYSTEM>
+<Atom 13: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 14: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 3380: O of type 704 resid 1 and segid SYSTEM>
+
+Component 43
+<Atom 19: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4464: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8316: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7608: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7404: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5112: O of type 602 resid 1 and segid SYSTEM>
+
+Component 44
+<Atom 6696: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5208: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8280: O of type 602 resid 1 and segid SYSTEM>
+<Atom 26: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5628: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8376: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1700: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3400: O of type 704 resid 1 and segid SYSTEM>
+
+Component 45
+<Atom 2140: O of type 704 resid 1 and segid SYSTEM>
+<Atom 550: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7860: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4090: O of type 704 resid 1 and segid SYSTEM>
+<Atom 60: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 6216: O of type 602 resid 1 and segid SYSTEM>
+
+Component 46
+<Atom 8688: O of type 602 resid 1 and segid SYSTEM>
+<Atom 33: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 2930: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6504: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2060: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5844: O of type 602 resid 1 and segid SYSTEM>
+
+Component 47
+<Atom 880: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7488: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2190: O of type 704 resid 1 and segid SYSTEM>
+<Atom 940: O of type 704 resid 1 and segid SYSTEM>
+<Atom 40: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 3360: O of type 704 resid 1 and segid SYSTEM>
+
+Component 48
+<Atom 910: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6492: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8088: O of type 602 resid 1 and segid SYSTEM>
+<Atom 43: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1420: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7416: O of type 602 resid 1 and segid SYSTEM>
+
+Component 49
+<Atom 4380: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7452: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4812: O of type 602 resid 1 and segid SYSTEM>
+<Atom 58: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4716: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6636: O of type 602 resid 1 and segid SYSTEM>
+
+Component 50
+<Atom 5232: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4476: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2220: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1920: O of type 704 resid 1 and segid SYSTEM>
+<Atom 31: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7428: O of type 602 resid 1 and segid SYSTEM>
+
+Component 51
+<Atom 1230: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8340: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7284: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5376: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7716: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4644: O of type 602 resid 1 and segid SYSTEM>
+<Atom 48: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 52
+<Atom 1750: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3540: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6468: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6228: O of type 602 resid 1 and segid SYSTEM>
+<Atom 45: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4332: O of type 602 resid 1 and segid SYSTEM>
+
+Component 0
+<Atom 8220: O of type 602 resid 1 and segid SYSTEM>
+<Atom 20: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1650: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8040: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4608: O of type 602 resid 1 and segid SYSTEM>
+
+Component 1
+<Atom 65: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 2
+<Atom 4440: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5220: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6048: O of type 602 resid 1 and segid SYSTEM>
+<Atom 990: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6108: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2970: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4270: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1730: O of type 704 resid 1 and segid SYSTEM>
+<Atom 44: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 50: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 3
+<Atom 7548: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6072: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1680: O of type 704 resid 1 and segid SYSTEM>
+<Atom 2040: O of type 704 resid 1 and segid SYSTEM>
+
+Component 4
+<Atom 1260: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6432: O of type 602 resid 1 and segid SYSTEM>
+<Atom 65: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 2650: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5820: O of type 602 resid 1 and segid SYSTEM>
+
+Component 5
+<Atom 2080: O of type 704 resid 1 and segid SYSTEM>
+<Atom 37: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 2730: O of type 704 resid 1 and segid SYSTEM>
+<Atom 2720: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7788: O of type 602 resid 1 and segid SYSTEM>
+
+Component 6
+<Atom 1820: O of type 704 resid 1 and segid SYSTEM>
+<Atom 21: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1580: O of type 704 resid 1 and segid SYSTEM>
+<Atom 650: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5688: O of type 602 resid 1 and segid SYSTEM>
+
+Component 7
+<Atom 1890: O of type 704 resid 1 and segid SYSTEM>
+<Atom 620: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5676: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6060: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4932: O of type 602 resid 1 and segid SYSTEM>
+<Atom 35: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4572: O of type 602 resid 1 and segid SYSTEM>
+<Atom 39: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5424: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3350: O of type 704 resid 1 and segid SYSTEM>
+
+Component 8
+<Atom 8244: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1540: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5988: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4860: O of type 602 resid 1 and segid SYSTEM>
+<Atom 42: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 9
+<Atom 8604: O of type 602 resid 1 and segid SYSTEM>
+<Atom 52: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4512: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2640: O of type 704 resid 1 and segid SYSTEM>
+<Atom 2050: O of type 704 resid 1 and segid SYSTEM>
+
+Component 10
+<Atom 28: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 6900: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6912: O of type 602 resid 1 and segid SYSTEM>
+
+Component 11
+<Atom 8004: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8424: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4250: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4284: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3980: O of type 704 resid 1 and segid SYSTEM>
+<Atom 49: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 12
+<Atom 3220: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6552: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 6372: O of type 602 resid 1 and segid SYSTEM>
+
+Component 13
+<Atom 5532: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6336: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5616: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2960: O of type 704 resid 1 and segid SYSTEM>
+<Atom 12: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 14
+<Atom 3450: O of type 704 resid 1 and segid SYSTEM>
+<Atom 24: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7932: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7620: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6852: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2110: O of type 704 resid 1 and segid SYSTEM>
+
+Component 15
+<Atom 2660: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6024: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5880: O of type 602 resid 1 and segid SYSTEM>
+
+Component 16
+<Atom 5592: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3150: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1030: O of type 704 resid 1 and segid SYSTEM>
+<Atom 10: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5856: O of type 602 resid 1 and segid SYSTEM>
+
+Component 17
+<Atom 4416: O of type 602 resid 1 and segid SYSTEM>
+<Atom 25: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4120: O of type 704 resid 1 and segid SYSTEM>
+<Atom 30: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 8352: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7992: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1950: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1050: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8544: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2750: O of type 704 resid 1 and segid SYSTEM>
+
+Component 18
+<Atom 7836: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7104: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4488: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2230: O of type 704 resid 1 and segid SYSTEM>
+<Atom 62: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 3870: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3260: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6180: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6972: O of type 602 resid 1 and segid SYSTEM>
+<Atom 46: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 19
+<Atom 3760: O of type 704 resid 1 and segid SYSTEM>
+<Atom 22: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 27: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4920: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6084: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2940: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6132: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6564: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6612: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6660: O of type 602 resid 1 and segid SYSTEM>
+
+Component 20
+<Atom 2790: O of type 704 resid 1 and segid SYSTEM>
+<Atom 2480: O of type 704 resid 1 and segid SYSTEM>
+<Atom 29: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4150: O of type 704 resid 1 and segid SYSTEM>
+<Atom 950: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3860: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1300: O of type 704 resid 1 and segid SYSTEM>
+<Atom 690: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3250: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4240: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 18: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 790: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7056: O of type 602 resid 1 and segid SYSTEM>
+
+Component 21
+<Atom 5916: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3490: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8328: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4500: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5328: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1380: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3010: O of type 704 resid 1 and segid SYSTEM>
+<Atom 15: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7032: O of type 602 resid 1 and segid SYSTEM>
+
+Component 22
+<Atom 5172: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4070: O of type 704 resid 1 and segid SYSTEM>
+<Atom 55: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5964: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1610: O of type 704 resid 1 and segid SYSTEM>
+
+Component 23
+<Atom 51: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7092: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1850: O of type 704 resid 1 and segid SYSTEM>
+<Atom 23: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 3830: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6804: O of type 602 resid 1 and segid SYSTEM>
+<Atom 970: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7212: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7044: O of type 602 resid 1 and segid SYSTEM>
+
+Component 24
+<Atom 3480: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5292: O of type 602 resid 1 and segid SYSTEM>
+<Atom 64: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1040: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3080: O of type 704 resid 1 and segid SYSTEM>
+
+Component 25
+<Atom 53: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1190: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6708: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7764: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6624: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5100: O of type 602 resid 1 and segid SYSTEM>
+
+Component 26
+<Atom 7464: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7560: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7956: O of type 602 resid 1 and segid SYSTEM>
+<Atom 61: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 6828: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4956: O of type 602 resid 1 and segid SYSTEM>
+
+Component 27
+<Atom 7356: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3610: O of type 704 resid 1 and segid SYSTEM>
+<Atom 32: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 2210: O of type 704 resid 1 and segid SYSTEM>
+
+Component 28
+<Atom 6720: O of type 602 resid 1 and segid SYSTEM>
+<Atom 580: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8676: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6420: O of type 602 resid 1 and segid SYSTEM>
+<Atom 63: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 29
+<Atom 3020: O of type 704 resid 1 and segid SYSTEM>
+<Atom 56: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4896: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1070: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8520: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3690: O of type 704 resid 1 and segid SYSTEM>
+
+Component 30
+<Atom 57: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 630: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4656: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4020: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7440: O of type 602 resid 1 and segid SYSTEM>
+
+Component 31
+<Atom 1170: O of type 704 resid 1 and segid SYSTEM>
+<Atom 54: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7944: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3180: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7596: O of type 602 resid 1 and segid SYSTEM>
+
+Component 32
+<Atom 2780: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7116: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2510: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4872: O of type 602 resid 1 and segid SYSTEM>
+<Atom 38: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 33
+<Atom 1490: O of type 704 resid 1 and segid SYSTEM>
+<Atom 860: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3810: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5244: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7236: O of type 602 resid 1 and segid SYSTEM>
+<Atom 34: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 8124: O of type 602 resid 1 and segid SYSTEM>
+<Atom 11: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1740: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3390: O of type 704 resid 1 and segid SYSTEM>
+
+Component 34
+<Atom 2180: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 2630: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5400: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6984: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5868: O of type 602 resid 1 and segid SYSTEM>
+<Atom 780: O of type 704 resid 1 and segid SYSTEM>
+
+Component 35
+<Atom 600: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4548: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7272: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5436: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5472: O of type 602 resid 1 and segid SYSTEM>
+<Atom 17: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 36
+<Atom 1830: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3800: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8712: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2280: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3620: O of type 704 resid 1 and segid SYSTEM>
+<Atom 41: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 37
+<Atom 2830: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6012: O of type 602 resid 1 and segid SYSTEM>
+<Atom 59: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1570: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8736: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1940: O of type 704 resid 1 and segid SYSTEM>
+<Atom 2270: O of type 704 resid 1 and segid SYSTEM>
+<Atom 36: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7656: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2100: O of type 704 resid 1 and segid SYSTEM>
+
+Component 38
+<Atom 4404: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8652: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2520: O of type 704 resid 1 and segid SYSTEM>
+<Atom 960: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7776: O of type 602 resid 1 and segid SYSTEM>
+<Atom 16: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 39
+<Atom 3440: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6480: O of type 602 resid 1 and segid SYSTEM>
+<Atom 47: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5496: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1150: O of type 704 resid 1 and segid SYSTEM>
+
+Component 40
+<Atom 7476: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1280: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4584: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1120: O of type 704 resid 1 and segid SYSTEM>
+
+Component 41
+<Atom 3120: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6816: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2910: O of type 704 resid 1 and segid SYSTEM>
+<Atom 4190: O of type 704 resid 1 and segid SYSTEM>
+<Atom 9: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5460: O of type 602 resid 1 and segid SYSTEM>
+
+Component 42
+<Atom 8640: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7884: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5976: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8664: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6384: O of type 602 resid 1 and segid SYSTEM>
+<Atom 3840: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1620: O of type 704 resid 1 and segid SYSTEM>
+<Atom 13: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 14: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 3380: O of type 704 resid 1 and segid SYSTEM>
+
+Component 43
+<Atom 19: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4464: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8316: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7608: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7404: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5112: O of type 602 resid 1 and segid SYSTEM>
+
+Component 44
+<Atom 6696: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5208: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8280: O of type 602 resid 1 and segid SYSTEM>
+<Atom 26: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 5628: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8376: O of type 602 resid 1 and segid SYSTEM>
+<Atom 1: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1700: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3400: O of type 704 resid 1 and segid SYSTEM>
+
+Component 45
+<Atom 2140: O of type 704 resid 1 and segid SYSTEM>
+<Atom 550: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7860: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4090: O of type 704 resid 1 and segid SYSTEM>
+<Atom 60: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 6216: O of type 602 resid 1 and segid SYSTEM>
+
+Component 46
+<Atom 8688: O of type 602 resid 1 and segid SYSTEM>
+<Atom 33: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 2930: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6504: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2060: O of type 704 resid 1 and segid SYSTEM>
+<Atom 5844: O of type 602 resid 1 and segid SYSTEM>
+
+Component 47
+<Atom 880: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7488: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2190: O of type 704 resid 1 and segid SYSTEM>
+<Atom 940: O of type 704 resid 1 and segid SYSTEM>
+<Atom 40: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 3360: O of type 704 resid 1 and segid SYSTEM>
+
+Component 48
+<Atom 910: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6492: O of type 602 resid 1 and segid SYSTEM>
+<Atom 8088: O of type 602 resid 1 and segid SYSTEM>
+<Atom 43: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 1420: O of type 704 resid 1 and segid SYSTEM>
+<Atom 7416: O of type 602 resid 1 and segid SYSTEM>
+
+Component 49
+<Atom 4380: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7452: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4812: O of type 602 resid 1 and segid SYSTEM>
+<Atom 58: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4716: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6636: O of type 602 resid 1 and segid SYSTEM>
+
+Component 50
+<Atom 5232: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4476: O of type 602 resid 1 and segid SYSTEM>
+<Atom 2220: O of type 704 resid 1 and segid SYSTEM>
+<Atom 1920: O of type 704 resid 1 and segid SYSTEM>
+<Atom 31: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 7428: O of type 602 resid 1 and segid SYSTEM>
+
+Component 51
+<Atom 1230: O of type 704 resid 1 and segid SYSTEM>
+<Atom 8340: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7284: O of type 602 resid 1 and segid SYSTEM>
+<Atom 5376: O of type 602 resid 1 and segid SYSTEM>
+<Atom 7716: O of type 602 resid 1 and segid SYSTEM>
+<Atom 4644: O of type 602 resid 1 and segid SYSTEM>
+<Atom 48: Na+ of type 7 resid 1 and segid SYSTEM>
+
+Component 52
+<Atom 1750: O of type 704 resid 1 and segid SYSTEM>
+<Atom 3540: O of type 704 resid 1 and segid SYSTEM>
+<Atom 6468: O of type 602 resid 1 and segid SYSTEM>
+<Atom 6228: O of type 602 resid 1 and segid SYSTEM>
+<Atom 45: Na+ of type 7 resid 1 and segid SYSTEM>
+<Atom 4332: O of type 602 resid 1 and segid SYSTEM>
+

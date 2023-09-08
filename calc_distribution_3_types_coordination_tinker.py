@@ -51,6 +51,8 @@ def loadUnivers(traj_file, top_file):
             u = mda.Universe(traj_file, topology_format='LAMMPSDUMP')
         elif traj_file.split('.')[-1] == 'nc':
             u = mda.Universe(top_file, traj_file)
+        elif traj_file.split('.')[-1] == 'arc':
+            u = mda.Universe(traj_file)
     except FileNotFoundError:
         print("Trajectory file not found")
         sys.exit()
@@ -236,9 +238,9 @@ def computeAgg(atoms, epsilons, atom_type, last):
     atoms_C = atoms[2]
 
     # Type of atoms
-    resname_A = atom_type[0].split(' ')[1]
-    resname_B = atom_type[1].split(' ')[1]
-    resname_C = atom_type[2].split(' ')[1]
+    type_A = atom_type[0].split(' ')[1]
+    type_B = atom_type[1].split(' ')[1]
+    type_C = atom_type[2].split(' ')[1]
 
     # We define a group of atoms containing all the atoms
     atoms_all = atoms_A + atoms_B + atoms_C
@@ -253,7 +255,7 @@ def computeAgg(atoms, epsilons, atom_type, last):
 
     # We remove all pairs that are not composed by an atom of type C
     for i in range(pairs.shape[0]):
-        if resname_C not in atoms_all[pairs[i]].resnames:
+        if type_C not in atoms_all[pairs[i]].types:
             pairs[i] = -1, -1
     # We create a graph
     G = nx.Graph()
@@ -261,9 +263,9 @@ def computeAgg(atoms, epsilons, atom_type, last):
     # We compute the number of atoms in each aggregate
     agg = np.zeros((nx.number_connected_components(G), 3), dtype=np.int32)
     j = 0
-    str_type_A = "x.resnames == '" + resname_A + "'"
-    str_type_B = "x.resnames == '" + resname_B + "'"
-    str_type_C = "x.resnames == '" + resname_C + "'"
+    str_type_A = "x.types == '" + type_A + "'"
+    str_type_B = "x.types == '" + type_B + "'"
+    str_type_C = "x.types == '" + type_C + "'"
     for component in nx.connected_components(G):
         x = atoms_all[list(component)]
         if last == True:
@@ -271,6 +273,12 @@ def computeAgg(atoms, epsilons, atom_type, last):
             for i in range(x.n_atoms):
                 print(x[i])
             print()
+            # We will save this information in a file in order to be able to check it
+            with open("check/aggregates_types_frame_{}_{}_{}_{}_eps_{:.2f}_{:.2f}.txt".format('last', type_A, type_B, type_C, epsilon_AC, epsilon_BC), 'a') as f:
+                f.write("Component {}\n".format(j))
+                for i in range(x.n_atoms):
+                    f.write("{}\n".format(x[i]))
+                f.write("\n")
         a = np.where(eval(str_type_A))[0].shape[0]
         b = np.where(eval(str_type_B))[0].shape[0]
         c = np.where(eval(str_type_C))[0].shape[0]
@@ -499,16 +507,19 @@ def main():
     # And three distance
     parser.add_argument('-e', '--epsilon', type=float, nargs='+', help='Distance between atoms to be considered as a pair: epsilon_AC psilon_BC')
     parser.add_argument('-tr', '--traj-file', type=str, help='Trajectory file or distribution file')
-    parser.add_argument('-to', '--top-file', type=str, help='Topology file')
+    #parser.add_argument('-to', '--top-file', type=str, help='Topology file')
     parser.add_argument('-pl', '--plot', type=str, help='Plot the distribution of aggregates', choices=['yes', 'no'])
     parser.add_argument('-o', '--output', type=str, help='Output file')
 
     # create the directory DATA_distribution if it does not exist
     os.makedirs('DATA_distribution', exist_ok=True)
     os.makedirs('FIGURES', exist_ok=True)
+    os.makedirs('check', exist_ok=True)
 
 
     args = parser.parse_args()
+    # No topology file is needed for tinker
+    args.top_file = ""
 
     # Parse the types
     atom_types = args.atom_type
@@ -531,11 +542,15 @@ def main():
         u = loadUnivers(args.traj_file, args.top_file)
         print("Trajectory file loaded")
 
-        print("In the trajectory file, we found {} resnames".format(np.unique(u.atoms.resnames).shape[0]))
-        print("The resnames are:")
-        for i in range(np.unique(u.atoms.resnames).shape[0]):
-            print(np.unique(u.atoms.resnames)[i])
-        print()
+        #print("In the trajectory file, we found {} resnames".format(np.unique(u.atoms.resnames).shape[0]))
+        #print("The resnames are:")
+        #for i in range(np.unique(u.atoms.resnames).shape[0]):
+        #    print(np.unique(u.atoms.resnames)[i])
+        #print()
+        print("In the trajectory file, we found {} types".format(np.unique(u.atoms.types).shape[0]))
+        print("The types are:")
+        for i in range(np.unique(u.atoms.types).shape[0]):
+            print(np.unique(u.atoms.types)[i])
         
         # get the wanted atoms
         print("Get the wanted atoms...")

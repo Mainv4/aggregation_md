@@ -6,4 +6,5 @@
 **/*.restart2
 DATA_distribution
 FIGURES
+check
 __pycache__

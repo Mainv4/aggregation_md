@@ -50,4 +50,7 @@ The scripts are designed to be run from the command line.  The scripts are:
 	* It can be tested using the following command:
 		* `python3 calc_distribution_3_types_coordination_amber.py -c yes -p no -a "resname ECA and type o" "resname PCA and type o" "resname Na+" -e 3.1 3.1 -tr examples/amber/10frames.nc -to examples/amber/boite.prmtop -pl yes -o distr` 
 
+* calc_distribution_3_types_coordination_tinker.py
+    * This code allows to study the same kind of system as the previous one, but for simulations in tinker format.
+          `python3 calc_distribution_3_types_coordination_tinker.py -c yes -p no -a "type 704" "type 602" "type 7" -e 3.1 3.1 -tr examples/tinker/napf6_1M_in_ECDMC_2frames.arc -pl yes -o distr`
 
