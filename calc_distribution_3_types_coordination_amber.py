@@ -266,12 +266,15 @@ def computeAgg(atoms, epsilons, atom_type, last):
     str_type_C = "x.resnames == '" + resname_C + "'"
     for component in nx.connected_components(G):
         x = atoms_all[list(component)]
-        if last == True:
-            print(component)
-            for i in range(x.n_atoms):
-                print(x[i])
-            print()
-        a,b,c= np.where(eval(str_type_A))[0].shape[0], np.where(eval(str_type_B))[0].shape[0], np.where(eval(str_type_C))[0].shape[0]
+        #if last == True:
+        #    print(component)
+        #    for i in range(x.n_atoms):
+        #        print(x[i])
+        #    print()
+        #a, b, c = np.where(eval(str_type_A))[0].shape[0], np.where(eval(str_type_B))[0].shape[0], np.where(eval(str_type_C))[0].shape[0]
+        a = np.where(eval(str_type_A))[0].shape[0]
+        b = np.where(eval(str_type_B))[0].shape[0]
+        c = np.where(eval(str_type_C))[0].shape[0]
         agg[j] = a, b, c
         j += 1
     return agg
@@ -460,6 +463,8 @@ def plotDistribution(file_name, atom_type):
         from matplotlib.colors import LogNorm
         set_plot_style()
         distribution_mean = np.ma.masked_equal(distribution_mean, 0)
+        # Here we have numbers. We want to have a distribution of aggregates.
+        distribution_mean = distribution_mean / np.sum(distribution_mean)
         plt.imshow(distribution_mean, cmap='jet', origin='lower', norm=LogNorm())
         plt.colorbar(aspect=5, pad=0.01, fraction=0.15 * 2, label=r'$N$')
         plt.xlabel(r'$n_\mathrm{%s}$' % resname_B)
