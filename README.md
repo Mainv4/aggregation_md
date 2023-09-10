@@ -40,8 +40,10 @@ The scripts are designed to be run from the command line.  The scripts are:
 * calc_distribution_1_type.py
 	* Written for lammps trajectories, it looks for the aggregate made by one type of atom.
 	* It can be tested using the following command:
-		* ```python3 calc_distribution_1_type.py -c yes -p yes -pl yes \\
-        -a "type 1" -e 2.0 -f examples/lammps/traj_1_type.lammpstrj -o distr```
+		* ```
+        python3 calc_distribution_1_type.py -c yes -p yes -pl yes \\
+        -a "type 1" -e 2.0 -f examples/lammps/traj_1_type.lammpstrj -o distr
+        ```
 * calc_distribution_2_types.py
 	* Written for lammps trajectories, it looks for the aggregate made by two types of atoms and three distances between them.
 	* It can be tested using the following command:
