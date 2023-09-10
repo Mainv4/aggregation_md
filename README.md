@@ -40,15 +40,18 @@ The scripts are designed to be run from the command line.  The scripts are:
 * calc_distribution_1_type.py
 	* Written for lammps trajectories, it looks for the aggregate made by one type of atom.
 	* It can be tested using the following command:
-		* `python3 calc_distribution_1_type.py -c yes -p yes -pl yes -a "type 1" -e 2.0 -f examples/lammps/traj_1_type.lammpstrj -o distr`
+		* `python3 calc_distribution_1_type.py -c yes -p yes -pl yes \\
+        -a "type 1" -e 2.0 -f examples/lammps/traj_1_type.lammpstrj -o distr`
 * calc_distribution_2_types.py
 	* Written for lammps trajectories, it looks for the aggregate made by two types of atoms and three distances between them.
 	* It can be tested using the following command:
-		* `python3 calc_distribution_2_types.py -c yes -p yes -pl yes -a "type 1" "type 2" -e 2.0 2.0 -f examples/lammps/traj_2_types.lammpstrj -o distr`
+		* `python3 calc_distribution_2_types.py -c yes -p yes -pl yes \\
+        -a "type 1" "type 2" -e 2.0 2.0 -f examples/lammps/traj_2_types.lammpstrj -o distr`
 * calc_distribution_3_types_coordination_amber.py
 	* Written for amber trajectories, it looks for the coordination of an ion with organic molecules. It considers three types of atoms, but only two distances since it only considers the distance between the ion and the oxygen atom of the two possible organic molecules, forgetting about the distance between the two organic molecules, which is not relevant for the coordination.
 	* It can be tested using the following command:
-		* `python3 calc_distribution_3_types_coordination_amber.py -c yes -p no -a "resname ECA and type o" "resname PCA and type o" "resname Na+" -e 3.1 3.1 -tr examples/amber/10frames.nc -to examples/amber/boite.prmtop -pl yes -o distr` 
+		* `python3 calc_distribution_3_types_coordination_amber.py -c yes -p yes \\
+        -a "resname ECA and type o" "resname PCA and type o" "resname Na+" -e 3.1 3.1 -tr examples/amber/10frames.nc -to examples/amber/boite.prmtop -pl yes -o distr` 
 
 * calc_distribution_3_types_coordination_tinker.py
     * This code allows to study the same kind of system as the previous one, but for simulations in tinker format.
