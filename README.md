@@ -49,7 +49,7 @@ The scripts are designed to be run from the command line.  The scripts are:
 	* It can be tested using the following command:
 ```
     python3 calc_distribution_2_types.py -c yes -p yes -pl yes \\
--a "type 1" "type 2" -e 2.0 2.0 -f examples/lammps/traj_2_types.lammpstrj -o distr
+    -a "type 1" "type 2" -e 2.0 2.0 -f examples/lammps/traj_2_types.lammpstrj -o distr
 ```
 * calc_distribution_3_types_coordination_amber.py
 	* Written for amber trajectories, it looks for the coordination of an ion with organic molecules. It considers three types of atoms, but only two distances since it only considers the distance between the ion and the oxygen atom of the two possible organic molecules, forgetting about the distance between the two organic molecules, which is not relevant for the coordination.
