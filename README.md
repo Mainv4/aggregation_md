@@ -11,6 +11,11 @@ The scripts are written in python 3 and require the following packages:
 * networkx
 * tqdm
 
+The script will create three directories in the current directory:
+* `DATA_distribution` will contain the distribution of aggregates in a numpy array format
+* `FIGURES` will contain the figures of the distribution of aggregates if the flag `-pl yes` is used
+* `check` will contain a text file listing explicitly the aggregates found in the last frame of the trajectory
+
 ## Parameters
 ```
 options:

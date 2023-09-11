@@ -4,6 +4,7 @@
 **/*.dat
 **/*.restart1
 **/*.restart2
+README.txt
 DATA_distribution
 FIGURES
 check

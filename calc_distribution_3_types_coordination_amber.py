@@ -271,6 +271,12 @@ def computeAgg(atoms, epsilons, atom_type, last):
             for i in range(x.n_atoms):
                 print(x[i])
             print()
+            # We will save this information in a file in order to be able to check it
+            with open("check/aggregates_types_frame_{}_{}_{}_{}_eps_{:.2f}_{:.2f}.txt".format('last', resname_A, resname_B, resname_C, epsilon_AC, epsilon_BC), 'a') as f:
+                f.write("Component {}\n".format(j))
+                for i in range(x.n_atoms):
+                    f.write("{}\n".format(x[i]))
+                f.write("\n")
         a = np.where(eval(str_type_A))[0].shape[0]
         b = np.where(eval(str_type_B))[0].shape[0]
         c = np.where(eval(str_type_C))[0].shape[0]
@@ -506,6 +512,7 @@ def main():
     # create the directory DATA_distribution if it does not exist
     os.makedirs('DATA_distribution', exist_ok=True)
     os.makedirs('FIGURES', exist_ok=True)
+    os.makedirs('check', exist_ok=True)
 
 
     args = parser.parse_args()
