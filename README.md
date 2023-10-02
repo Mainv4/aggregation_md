@@ -24,7 +24,9 @@ The directory `lammps_tinker_versions` contains alternatives and older scripts a
 options:
   -h, --help            show this help message and exit
   -c {yes,no}, --compute {yes,no}
-                        Compute the distribution of aggregates
+                        Compute the distribution of aggregates (if no, the
+                        distribution will be loaded, if it exists, in order to
+                        plot it)
   -p {yes,no}, --parallel {yes,no}
                         If True, the computation will be done in parallel
   -ct CUTOFF, --cutoff CUTOFF
@@ -38,8 +40,9 @@ options:
                         The type of the wanted atoms: "type A" "type B" "type
                         C", ...
   -e EPSILON [EPSILON ...], --epsilon EPSILON [EPSILON ...]
-                        Distance between atoms to be considered as a pair:
-                        epsilon_AC psilon_BC
+                        Distance between atoms to be considered as a pair
+                        (beware of the order) : epsilon_AA, epsilon_BB, ...,
+                        espilon_ZZ, epsilon_AB, epsilon_AC, ..., epsilon_YZ
   -tr TRAJ_FILE, --traj-file TRAJ_FILE
                         Trajectory file or distribution file
   -to TOP_FILE, --top-file TOP_FILE

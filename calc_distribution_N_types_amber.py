@@ -569,7 +569,7 @@ def main():
     parser.add_argument('-ct', '--cutoff', type=float, help='If int>1: number of frames to be skipped at the beginning of the trajectory, if float<1=: proportion of frames to be skipped at the beginning of the trajectory')
     parser.add_argument('-na', '--n-atoms', type=int, help='Number of types of atoms considered in the analysis')
     parser.add_argument('-a', '--atom_type', type=str, nargs='+', help='The type of the wanted atoms: "type A" "type B" "type C", ...')
-    parser.add_argument('-e', '--epsilon', type=float, nargs='+', help='Distance between atoms to be considered as a pair: epsilon_AC psilon_BC')
+    parser.add_argument('-e', '--epsilon', type=float, nargs='+', help='Distance between atoms to be considered as a pair (beware of the order) : epsilon_AA, epsilon_BB, ..., espilon_ZZ, epsilon_AB, epsilon_AC, ..., epsilon_YZ')
     parser.add_argument('-tr', '--traj-file', type=str, help='Trajectory file or distribution file')
     parser.add_argument('-to', '--top-file', type=str, help='Topology file')
     parser.add_argument('-pl', '--plot', type=str, help='Plot the distribution of aggregates', choices=['yes', 'no'])
