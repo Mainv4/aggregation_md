@@ -478,86 +478,59 @@ def plotDistribution(file_name, atom_type, n_atoms):
     #print("distribution_mean: " + str(distribution_mean))
     print(distribution.shape)
     print(distribution_mean.shape)
+    print("n_atoms : {}".format(n_atoms))
 
     # Linscale
     set_plot_style()
-    #plt.imshow(distribution_mean, cmap='jet', origin='lower')
-    #plt.colorbar(aspect=5, pad=0.01, fraction=0.15 * 2, label=r'$N$')
-    #resname_A = atom_type[0].split(' ')[1]
-    #resname_B = atom_type[1].split(' ')[1]
-    #plt.xlabel(r'$n_\mathrm{%s}$' % resname_B)
-    #plt.ylabel(r'$n_\mathrm{%s}$' % resname_A)
-    #if max(distribution_mean.shape) < 10:
-    #    plt.xticks(np.arange(0, distribution_mean.shape[0], 1))
-    #    plt.yticks(np.arange(0, distribution_mean.shape[1], 1))
-    #else:
-    #    plt.xticks(np.arange(0, distribution_mean.shape[0], 2))
-    #    plt.yticks(np.arange(0, distribution_mean.shape[1], 2))
-    #plt.tight_layout()
-    #plt.savefig("FIGURES/" + file_name + '.png')
-    #plt.close()
-    ## Logscale
-    #from matplotlib.colors import LogNorm
-    #set_plot_style()
-    #distribution_mean = np.ma.masked_equal(distribution_mean, 0)
-    ## Here we have numbers. We want to have a distribution of aggregates.
-    #distribution_mean = distribution_mean / np.sum(distribution_mean)
-    #plt.imshow(distribution_mean, cmap='jet', origin='lower', norm=LogNorm())
-    #plt.colorbar(aspect=5, pad=0.01, fraction=0.15 * 2, label=r'$N$')
-    #plt.xlabel(r'$n_\mathrm{%s}$' % resname_B)
-    #plt.ylabel(r'$n_\mathrm{%s}$' % resname_A)
-    #if max(distribution_mean.shape) < 10:
-    #    plt.xticks(np.arange(0, distribution_mean.shape[0], 1))
-    #    plt.yticks(np.arange(0, distribution_mean.shape[1], 1))
-    #else:
-    #    plt.xticks(np.arange(0, distribution_mean.shape[0], 2))
-    #    plt.yticks(np.arange(0, distribution_mean.shape[1], 2))
-    #plt.tight_layout()
-    #plt.savefig("FIGURES/" + file_name + '_log.png')
-    #plt.close()
-    n_plots = int(n_atoms * (n_atoms - 1) / 2)
-    print("Plotting {} plots".format(n_plots))
-    for i in range(n_atoms):
-        for j in range(i + 1, n_atoms):
-            try:
-                atom_type_A = atom_type[i]
-                atom_type_B = atom_type[j]
-                resname_A = atom_type_A.split(' ')[1]
-                resname_B = atom_type_B.split(' ')[1]
-                # distribution_mean is a n_atoms dimensional matrix. Each dimension corresponds to the number of atoms of a given type
-                # Example: distribution_mean[1, 2, 3, ... N] is the number of aggregates with 1 atom of type A, 2 atoms of type B, 3 atoms of type C, ..., N atoms of type Z
-                # We have to sum over all the dimensions except the two we want to plot
-                disribution_AB = np.sum(distribution_mean, axis=tuple([k for k in range(n_atoms) if k != i and k != j]))
-                set_plot_style()
-                plt.imshow(disribution_AB, cmap='jet', origin='lower')
-                plt.colorbar(aspect=5, pad=0.01, fraction=0.15 * 2, label=r'$N$')
-                plt.xlabel(r'$n_\mathrm{%s}$' % resname_B)
-                plt.ylabel(r'$n_\mathrm{%s}$' % resname_A)
-                if max(disribution_AB.shape) < 10:
-                    plt.xticks(np.arange(0, disribution_AB.shape[0], 1))
-                    plt.yticks(np.arange(0, disribution_AB.shape[1], 1))
-                else:
-                    plt.xticks(np.arange(0, disribution_AB.shape[0], 2))
-                    plt.yticks(np.arange(0, disribution_AB.shape[1], 2))
-                plt.tight_layout()
-                plt.savefig("FIGURES/" + file_name + '_' + resname_A + '_' + resname_B + '.png')
-                plt.close()
-                print("Plotting {}_{}_{}.png".format(file_name, resname_A, resname_B))
-            except IndexError:
-                print("IndexError")
-                print("i, j : {}, {}".format(i, j))
-                print("n_atoms : {}".format(n_atoms))
-
-        
-
-
-    #except FileNotFoundError:
-    #    print("Distribution file not found")
-    #    print("Please compute the distribution first")
-    #    print("Looking for the file : {}".format("DATA_distribution/" + file_name + '.npy'))
-    #    print("We have the following files in the directory DATA_distribution :")
-    #    for file in os.listdir("DATA_distribution"):
-    #        print(file)
+    if n_atoms > 1:
+        n_plots = int(n_atoms * (n_atoms - 1) / 2)
+        print("Plotting {} plots".format(n_plots))
+        for i in range(n_atoms):
+            for j in range(i + 1, n_atoms):
+                try:
+                    atom_type_A = atom_type[i]
+                    atom_type_B = atom_type[j]
+                    resname_A = atom_type_A.split(' ')[1]
+                    resname_B = atom_type_B.split(' ')[1]
+                    # distribution_mean is a n_atoms dimensional matrix. Each dimension corresponds to the number of atoms of a given type
+                    # Example: distribution_mean[1, 2, 3, ... N] is the number of aggregates with 1 atom of type A, 2 atoms of type B, 3 atoms of type C, ..., N atoms of type Z
+                    # We have to sum over all the dimensions except the two we want to plot
+                    distribution_AB = np.sum(distribution_mean, axis=tuple([k for k in range(n_atoms) if k != i and k != j]))
+                    set_plot_style()
+                    plt.imshow(distribution_AB, cmap='jet', origin='lower')
+                    plt.colorbar(aspect=5, pad=0.01, fraction=0.15 * 2, label=r'$N$')
+                    plt.xlabel(r'$n_\mathrm{%s}$' % resname_B)
+                    plt.ylabel(r'$n_\mathrm{%s}$' % resname_A)
+                    if max(distribution_AB.shape) < 10:
+                        plt.xticks(np.arange(0, distribution_AB.shape[0], 1))
+                        plt.yticks(np.arange(0, distribution_AB.shape[1], 1))
+                    else:
+                        plt.xticks(np.arange(0, distribution_AB.shape[0], 2))
+                        plt.yticks(np.arange(0, distribution_AB.shape[1], 2))
+                    plt.tight_layout()
+                    plt.savefig("FIGURES/" + file_name + '_' + resname_A + '_' + resname_B + '.png')
+                    plt.close()
+                    print("Plotting {}_{}_{}.png".format(file_name, resname_A, resname_B))
+                except IndexError:
+                    print("IndexError")
+                    print("i, j : {}, {}".format(i, j))
+                    print("n_atoms : {}".format(n_atoms))
+    else:
+        print("Plotting 1 plot since we have only one type of atoms")
+        print("It cannot be a heatmap because we have only one dimension")
+        print("Plotting histogram...")
+        atom_type_A = atom_type[0]
+        resname_A = atom_type_A.split(' ')[1]
+        distribution_A = np.sum(distribution_mean, axis=tuple([k for k in range(n_atoms) if k != 0]))
+        print(distribution_A.shape)
+        print(distribution_A)
+        set_plot_style()
+        plt.bar(np.arange(distribution_A.shape[0]), distribution_A)
+        plt.xlabel(r'$n_\mathrm{%s}$' % resname_A)
+        plt.ylabel(r'$N$')
+        plt.tight_layout()
+        plt.savefig("FIGURES/" + file_name + '_' + resname_A + '_' + resname_A + '.png')
+        plt.close()
 
 # main function
 def main():
@@ -566,7 +539,7 @@ def main():
     parser.add_argument("-c", "--compute", type=str, help="Compute the distribution of aggregates (if no, the distribution will be loaded, if it exists, in order to plot it)", choices=['yes', 'no'])
     parser.add_argument('-p', '--parallel', type=str, help='If True, the computation will be done in parallel', choices=['yes', 'no'])
     # cutoff can be int or float (if it is int: number of frames, if it is float: proportion of frames to be skipped)
-    parser.add_argument('-ct', '--cutoff', type=float, help='If int>1: number of frames to be skipped at the beginning of the trajectory, if float<1=: proportion of frames to be skipped at the beginning of the trajectory')
+    parser.add_argument('-ct', '--cutoff', type=int, help='If int>1: number of frames to be skipped at the beginning of the trajectory, if float<1=: proportion of frames to be skipped at the beginning of the trajectory')
     parser.add_argument('-na', '--n-atoms', type=int, help='Number of types of atoms considered in the analysis')
     parser.add_argument('-a', '--atom_type', type=str, nargs='+', help='The type of the wanted atoms: "type A" "type B" "type C", ...')
     parser.add_argument('-e', '--epsilon', type=float, nargs='+', help='Distance between atoms to be considered as a pair (beware of the order) : epsilon_AA, epsilon_BB, ..., espilon_ZZ, epsilon_AB, epsilon_AC, ..., epsilon_YZ')
