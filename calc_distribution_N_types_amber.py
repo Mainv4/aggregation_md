@@ -239,13 +239,20 @@ def computeAgg(atoms, epsilons_matrix, atom_types, n_atoms, last, frame_current)
         #print()
         #print()
         #print()
-
-    # Pairs of atoms of different types. We have corrected all the pairs from 0 to n_atoms - 1. We now have to correct the pairs from n_atoms to n_pairs - 1
+    
+    # Pairs of atoms of different types. We have corrected all the pairs from 0 to n_atoms - 1. 
+    # We now have to correct the pairs from n_atoms to n_pairs - 1
     for i in range(n_atoms):
         for j in range(i + 1, n_atoms):
             # We create a mask to remove the pairs that are not relevant (all A[i]: A[i,0] != A[i,1] and A[i,0] != resname)
             resname_i = atom_types[i].split(' ')[1]
             resname_j = atom_types[j].split(' ')[1]
+            
+            # We should NOT to this test if resname_i == resname_j because:
+            # 1. We are dealing with atoms belonging to the same resname so the test is useless
+            # 2. If we do this test on pairs having the same resname, but different atom types, we will remove all the pairs
+            if resname_i == resname_j:
+                continue
             indice = int(n_atoms + i * n_atoms - i * (i + 1) / 2 + j - i - 1)
             #print("resname_i : {}".format(resname_i))
             #print("resname_j : {}".format(resname_j))
@@ -278,6 +285,8 @@ def computeAgg(atoms, epsilons_matrix, atom_types, n_atoms, last, frame_current)
         # One of the lists is empty, we remove it and concatenate again
         pairs = np.concatenate([pair for pair in pairs if pair.size != 0])
     #print("Unique pairs : {}".format(np.unique(atoms_all[pairs].resnames, axis=0)))
+    #for i in range(len(pairs)):
+    #    print("Pair {} : {}".format(i, atoms_all[pairs[i]]))
 
     # We create a graph
     G = nx.Graph()
@@ -384,7 +393,6 @@ def computeDistribution(aggregates_list, atoms, n_atoms ,parallel):
     print("Maximum number of aggregates : {}".format(n_aggregates_max))
     # We compute the distribution of aggregates for each frame
     distribution = np.zeros((n_frames, n_aggregates_max, n_aggregates_max), dtype=np.int32)
-    aggregat_list = np.ma.masked_equal(aggregates_list, -1)
     def computeDistribution_step(t):
         """
         Compute the distribution of aggregates for a given frame t
@@ -400,9 +408,25 @@ def computeDistribution(aggregates_list, atoms, n_atoms ,parallel):
             The distribution of aggregates for the given frame
         """
         distribution_t = np.zeros(tuple([n_aggregates_max + 1 for i in range(n_atoms)]), dtype=np.int32)
-        v = np.unique(aggregat_list[t], return_counts=True, axis=0) 
-        for i in range(1,v[0].shape[0]):
+        aggregates = aggregates_list[t]
+        # We remove the entries that do not correspond to an aggregate (if all the entries of a single line are -1)
+        #for i in range(aggregates.shape[0]):
+        #    if aggregates[i][0] < 1 and aggregates[i][1] < 1:
+        #        aggregates[i] = np.zeros(n_atoms, dtype=np.int32) - 1
+        # We do that by creating a mask in order to avoid to do a loop
+        aggregates = aggregates[~np.all(aggregates == -1, axis=1)]
+        print('t : {}'.format(t))
+        print('aggregates :')
+        print(aggregates)
+        v = np.unique(aggregates, return_counts=True, axis=0) 
+        print('v : ')
+        for i in range(0,len(v[0])):
+            print(str(i) + ' ' + str(v[1][i]) + ' ' + str(v[0][i]))
+        print()
+        for i in range(0,v[0].shape[0]):
             distribution_t[tuple(v[0][i])] = v[1][i]
+        print('distribution_t : ')
+        print(distribution_t)
         return distribution_t
     if parallel == True:
         distribution = Parallel(n_jobs=-1)(delayed(computeDistribution_step)(t) for t in tqdm.tqdm(range(n_frames), desc='Aggregates distribution'))
@@ -454,7 +478,7 @@ def plotDistributionVsTime(distribution, k_AB, k_BA):
     plt.tight_layout()
     plt.savefig('distribution_vs_time.png')
 
-def plotDistribution(file_name, atom_type, n_atoms):
+def plotDistribution(file_name, atom_type, n_atoms, total_number_of_atoms):
     """
     Plot the mean distribution of aggregates
     There is as many plots as the number of types of atoms considered in the analysis
@@ -472,6 +496,10 @@ def plotDistribution(file_name, atom_type, n_atoms):
         The name of the distribution file
     atom_type : list of str
         The type of the wanted atoms
+    n_atoms : int
+        The number of types of atoms considered in the analysis
+    total_number_of_atoms : int
+        The total number of atoms in the system
     """
     distribution = np.load("DATA_distribution/" + file_name + '.npy')
     distribution_mean = computeMeanDistribution(distribution)
@@ -522,6 +550,10 @@ def plotDistribution(file_name, atom_type, n_atoms):
         atom_type_A = atom_type[0]
         resname_A = atom_type_A.split(' ')[1]
         distribution_A = np.sum(distribution_mean, axis=tuple([k for k in range(n_atoms) if k != 0]))
+        # We add the number of monomers to the distribution. It corresponds to the total number of atoms of type A - the number of aggregates of size i time i
+        n_monomers = total_number_of_atoms[0] - np.sum([distribution_A[i] * i for i in range(distribution_A.shape[0])])
+        print("n_monomers : {}".format(n_monomers))
+        distribution_A[1] += int(n_monomers)
         print(distribution_A.shape)
         print(distribution_A)
         set_plot_style()
@@ -667,6 +699,8 @@ def main():
         atoms = getAtoms(u, atom_types, n_atoms)
         print("Wanted atoms got")
         print(atoms)
+        total_number_of_atoms = [atoms[i].n_atoms for i in range(n_atoms)]
+        print("Total number of atoms for the analysis: {}".format(total_number_of_atoms))
 
         # Number of frames to be skipped at the beginning of the trajectory: cutoff
         if cutoff <= 1:
@@ -713,7 +747,7 @@ def main():
         distribution_mean = computeMeanDistribution(distribution)
     if args.plot == 'yes':
         file_name = args.output + "_" + args.traj_file.replace('.lammpstrj', '').replace('.nc', '').replace('/', '_')
-        plotDistribution(file_name, atom_types, n_atoms)
+        plotDistribution(file_name, atom_types, n_atoms, total_number_of_atoms)
 
 if __name__ == "__main__":
     main()
