@@ -632,6 +632,12 @@ def main():
             print("Please give the correct number of types of atoms")
             sys.exit()
 
+        # Check if all the names in atom_types contain the word 'resname'
+        for i in range(n_atoms):
+            if 'resname' not in atom_types[i]:
+                print("All the names in atom_types have to contain the word 'resname'")
+                sys.exit()
+
         print("Distances between atoms to be considered as a pair:")
         count_epsilons = 0
         n_epsilons_expected = n_atoms * (n_atoms + 1) / 2
@@ -692,7 +698,7 @@ def main():
                     print(" {:^10.2f}".format(epsilons_matrix[i][j]), end='')
             print()
         print()
-        print("You have chosen {} distances and {} types of atoms for the analysis".format(count_epsilons, args.n_atoms))
+        print("You have chosen {} distances and {} types of atoms for the analysis".format(int(len(epsilons)), args.n_atoms))
         # get the wanted atoms
         print("Get the wanted atoms...")
         atom_type = args.atom_type
