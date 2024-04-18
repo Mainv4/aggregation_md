@@ -564,6 +564,88 @@ def plotDistribution(file_name, atom_type, n_atoms, total_number_of_atoms):
         plt.savefig("FIGURES/" + file_name + '_' + resname_A + '_' + resname_A + '.png')
         plt.close()
 
+def printDistribution(file_name, atom_type, n_atoms, total_number_of_atoms):
+    """
+    Print the mean distribution of aggregates
+    There is as many matrice to plot as the number of types of atoms considered in the analysis
+    If we have atoms of type A and B, we will have one plot:
+    - d(n_A, n_B)
+    If we have atoms of type A, B and C, we will have three plots:
+    - d(n_A, n_B)
+    - d(n_A, n_C)
+    - d(n_B, n_C)
+    Generally, we will have n_matrices = n_atoms * (n_atoms - 1) / 2
+
+    Parameters
+    ----------
+    file_name : str
+        The name of the distribution file
+    atom_type : list of str
+        The type of the wanted atoms
+    n_atoms : int
+        The number of types of atoms considered in the analysis
+    total_number_of_atoms : int
+        The total number of atoms in the system
+    """
+    distribution = np.load("DATA_distribution/" + file_name + '.npy')
+    distribution_mean = computeMeanDistribution(distribution)
+    #print("distribution_mean: " + str(distribution_mean))
+    print(distribution.shape)
+    print(distribution_mean.shape)
+    print("n_atoms : {}".format(n_atoms))
+
+    if n_atoms > 1:
+        n_matrices = int(n_atoms * (n_atoms - 1) / 2)
+        #print("Plotting {} plots".format(n_plots))
+        print("Printing {} matrices".format(n_matrices))
+        for i in range(n_atoms):
+            for j in range(i + 1, n_atoms):
+                try:
+                    atom_type_A = atom_type[i]
+                    atom_type_B = atom_type[j]
+                    resname_A = atom_type_A.split(' ')[1]
+                    resname_B = atom_type_B.split(' ')[1]
+                    # distribution_mean is a n_atoms dimensional matrix. Each dimension corresponds to the number of atoms of a given type
+                    # Example: distribution_mean[1, 2, 3, ... N] is the number of aggregates with 1 atom of type A, 2 atoms of type B, 3 atoms of type C, ..., N atoms of type Z
+                    # We have to sum over all the dimensions except the two we want to plot
+                    distribution_AB = np.sum(distribution_mean, axis=tuple([k for k in range(n_atoms) if k != i and k != j]))
+        # We print the distribution and we specify to which resname i, j correspond
+        # We also specify wich resname has been summed over (if we have more than 2 types of atoms)
+                    print("distribution_{}_{} :".format(resname_A, resname_B))
+                    print('columns : {}'.format(resname_B))
+                    print('rows : {}'.format(resname_A))
+                    print(distribution_AB)
+                    print()
+                    print()
+                except IndexError:
+                    print("IndexError")
+                    print("i, j : {}, {}".format(i, j))
+                    print("n_atoms : {}".format(n_atoms))
+    else:
+        #print("Plotting 1 plot since we have only one type of atoms")
+        #print("It cannot be a heatmap because we have only one dimension")
+        #print("Plotting histogram...")
+        print("Print the distribution of aggregates")
+        print("It cannot be a matrix because we have only one dimension")
+        print("Print the histogram...")
+        atom_type_A = atom_type[0]
+        resname_A = atom_type_A.split(' ')[1]
+        distribution_A = np.sum(distribution_mean, axis=tuple([k for k in range(n_atoms) if k != 0]))
+        # We add the number of monomers to the distribution. It corresponds to the total number of atoms of type A - the number of aggregates of size i time i
+        n_monomers = total_number_of_atoms[0] - np.sum([distribution_A[i] * i for i in range(distribution_A.shape[0])])
+        print("n_monomers : {}".format(n_monomers))
+        distribution_A[1] += int(n_monomers)
+        print(distribution_A.shape)
+        print(distribution_A)
+        print("distribution_{}_{} :".format(resname_A))
+        print(distribution_A)
+        print()
+        print()
+
+
+
+
+
 # main function
 def main():
     # parse the command line arguments with argparse
@@ -754,6 +836,9 @@ def main():
     if args.plot == 'yes':
         file_name = args.output + "_" + args.traj_file.replace('.lammpstrj', '').replace('.nc', '').replace('/', '_')
         plotDistribution(file_name, atom_types, n_atoms, total_number_of_atoms)
+    elif args.plot == 'no':
+        file_name = args.output + "_" + args.traj_file.replace('.lammpstrj', '').replace('.nc', '').replace('/', '_')
+        printDistribution(file_name, atom_types, n_atoms, total_number_of_atoms)
 
 if __name__ == "__main__":
     main()
