@@ -51,7 +51,7 @@ def loadUnivers(traj_file, top_file):
             u = mda.Universe(traj_file, topology_format='LAMMPSDUMP')
         elif traj_file.split('.')[-1] == 'nc':
             u = mda.Universe(top_file, traj_file)
-        elif traj_file.split('.')[-1] == 'arc':
+        elif traj_file.split('.')[-1] == 'arc' or traj_file.split('.')[-1] == 'txyz':
             u = mda.Universe(traj_file)
     except FileNotFoundError:
         print("Trajectory file not found")
