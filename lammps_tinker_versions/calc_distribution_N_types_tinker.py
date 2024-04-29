@@ -228,8 +228,8 @@ def computeAgg(atoms, epsilons_matrix, atom_types, n_atoms, last, frame_current)
     for i in range(n_atoms):
         # We create a mask to remove the pairs that are not relevant (all A[i]: A[i,0] != A[i,1] and A[i,0] != type)
         type = atom_types[i].split(' ')[1]
-        print("type : {}".format(type))
-        print("indice : {}".format(i))
+        #print("type : {}".format(type))
+        #print("indice : {}".format(i))
         mask = np.ma.masked_equal(atoms_all[pairs[i][:, 0]].types, atoms_all[pairs[i][:, 1]].types).mask
         pairs[i] = pairs[i][mask]
         try:
@@ -237,10 +237,10 @@ def computeAgg(atoms, epsilons_matrix, atom_types, n_atoms, last, frame_current)
         except IndexError:
             pass
         pairs[i] = pairs[i][mask]
-        print("atoms_all[pairs[i]].types : {}".format(atoms_all[pairs[i]].types))
-        print()
-        print()
-        print()
+        #print("atoms_all[pairs[i]].types : {}".format(atoms_all[pairs[i]].types))
+        #print()
+        #print()
+        #print()
     
     # Pairs of atoms of different types. We have corrected all the pairs from 0 to n_atoms - 1. 
     # We now have to correct the pairs from n_atoms to n_pairs - 1
@@ -256,16 +256,16 @@ def computeAgg(atoms, epsilons_matrix, atom_types, n_atoms, last, frame_current)
             if type_i == type_j:
                 continue
             indice = int(n_atoms + i * n_atoms - i * (i + 1) / 2 + j - i - 1)
-            print("type_i : {}".format(type_i))
-            print("type_j : {}".format(type_j))
-            print("indice : {}".format(indice))
+            #print("type_i : {}".format(type_i))
+            #print("type_j : {}".format(type_j))
+            #print("indice : {}".format(indice))
             # We create a mask to remove the pairs that are not relevant (all A[i]: A[i,0] == A[i,1])
             mask = np.ma.masked_not_equal(atoms_all[pairs[indice][:, 0]].types, atoms_all[pairs[indice][:, 1]].types).mask
             pairs[indice] = pairs[indice][mask]
             # We create a mask to remove the pairs that are not relevant
             # (all A[i]: (A[i,0] != type_i and A[i,1] != type_j) or (A[i,0] != type_j and A[i,1] != type_i))
             # Attention, the two conditions have to be evaluated at the same time
-            print()
+            #print()
             try:
                 mask_ij_res_i_res_j = np.ma.masked_equal(atoms_all[pairs[indice][:, 0]].types, type_i).mask
                 mask_ij_res_j_res_i = np.ma.masked_equal(atoms_all[pairs[indice][:, 0]].types, type_j).mask
@@ -275,20 +275,20 @@ def computeAgg(atoms, epsilons_matrix, atom_types, n_atoms, last, frame_current)
                 pairs[indice] = pairs[indice][mask_ij]
             except IndexError:
                 pass
-            print("atoms_all[pairs[i]].types : {}".format(atoms_all[pairs[indice]].types))
-            print()
-            print()
-            print()
+            #print("atoms_all[pairs[i]].types : {}".format(atoms_all[pairs[indice]].types))
+            #print()
+            #print()
+            #print()
 
     # We put the pairs together
     try:
         pairs = np.concatenate(pairs)
-        print("Pairs : {}".format(pairs))
+        #print("Pairs : {}".format(pairs))
     except ValueError:
         # One of the lists is empty, we remove it and concatenate again
         pairs = np.concatenate([pair for pair in pairs if pair.size != 0])
-        print("We have removed an empty list of pairs")
-        print("Pairs : {}".format(pairs))
+        #print("We have removed an empty list of pairs")
+        #print("Pairs : {}".format(pairs))
     #print("Unique pairs : {}".format(np.unique(atoms_all[pairs].types, axis=0)))
     #for i in range(len(pairs)):
     #    print("Pair {} : {}".format(i, atoms_all[pairs[i]]))
@@ -298,8 +298,8 @@ def computeAgg(atoms, epsilons_matrix, atom_types, n_atoms, last, frame_current)
     G.add_edges_from(pairs)
     # We compute the number of atoms in each aggregate
     agg = np.zeros((nx.number_connected_components(G), n_atoms), dtype=np.int32)
-    print("Number of connected components : {}".format(nx.number_connected_components(G)))
-    print("Connected components : {}".format(nx.connected_components(G)))
+    #print("Number of connected components : {}".format(nx.number_connected_components(G)))
+    #print("Connected components : {}".format(nx.connected_components(G)))
     j = 0
     str_type = []
     for i in range(n_atoms):
@@ -309,7 +309,7 @@ def computeAgg(atoms, epsilons_matrix, atom_types, n_atoms, last, frame_current)
 
     for component in nx.connected_components(G):
         x = atoms_all[list(component)]
-        print("Component : {}".format(x))
+        #print("Component : {}".format(x))
         # We sort x according to the resid
         x = x[np.argsort(x.resids)]
         # We remove in x the duplicates according to the resid
